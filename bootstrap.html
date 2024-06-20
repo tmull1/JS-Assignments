@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Basic Website Layout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero {
+            background: url('https://media.istockphoto.com/id/1496414074/photo/traveler-man-standing-on-the-crater-of-kawah-ijen-volcano-with-sunrise-sky-in-the-morning.webp?b=1&s=170667a&w=0&k=20&c=Lu1JNLk8lOXXjuzpyfftIdAdLHoA8ss2ESYf1mbySP4=') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 4em;
+        }
+        .hero .btn {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Explore</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero">
+        <div>
+            <h1>Travel</h1>
+            <p><a href="#" class="btn btn-primary">Get Started</a></p>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about" class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>Hello, I'm sharing my adventures and tips to inspire your own journeys. From hidden gems to travel hacks, I cover it all to help you explore the world with confidence. Join me as I discover the beauty and diversity of our planet, one trip at a time.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/008/063/100/small/rear-view-portrait-of-young-man-traveler-with-backpack-standing-on-a-mountain-with-arms-spread-open-travel-life-style-and-adventure-concept-free-photo.jpg" class="img-fluid" alt="About Us">
+            </div>
+        </div>
+    </div>
+
+    <!-- Features section -->
+    <div id="features" class="container py-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-cog fa-3x mb-3"></i>
+                        <h5 class="card-title">Breathtaking Beaches</h5>
+                        <p class="card-text">Explore stunning beaches from the Maldives to Hawaii. Find tips on the best times to visit, activities to enjoy, and serene spots away from the crowds.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-cloud fa-3x mb-3"></i>
+                        <h5 class="card-title">Cultural City Tours</h5>
+                        <p class="card-text">Discover the rich history and vibrant cultures of cities like Paris, Tokyo, and Istanbul. Learn about must-see attractions, local customs, and travel tips for your urban adventures.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fas fa-lock fa-3x mb-3"></i>
+                        <h5 class="card-title">Adventurous Mountains</h5>
+                        <p class="card-text"> Visit majestic peaks from the Swiss Alps to the Rockies. Enjoy hiking, skiing, and climbing with tips on the best routes and safety.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="contact" class="container py-5">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    
+    <footer class="bg-light py-3 text-center">
+        <p class="mb-0">&copy; 2024 My Travel Company. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
